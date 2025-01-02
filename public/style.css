@@ -1,0 +1,118 @@
+body{
+    background-color: #f0e2c1;
+}
+
+nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #D6C8B1;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav ul li a:hover {
+    color: #d46885;
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #232323; /* Dark background for contrast */
+    color: #f0f0dd; /* Light text color */
+  }
+  
+  /* Logo Styling */
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 40px; /* Size of the logo */
+    margin-right: 10px;
+  }
+  
+  .logo span {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+  }
+  
+  /* Profile Section */
+  .profile {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Circular avatar */
+    margin-right: 10px;
+  }
+  
+  .profile .user-name {
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 15px;
+  }
+  
+  .settings-icon {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #d46885; /* Accent color for settings icon */
+  }
+  
+  .welcome-pic{
+    width: 250px;
+    padding: inherit;
+    margin:auto;
+    width: 200px;
+    display: block;
+  }
+
+  .gradient-text {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(90deg, #b58c6a, #ff9aa8, #fe226c, #b58c6a);
+    background-size: 400%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: gradientAnimation 5s ease infinite;
+    line-height: 1.2;
+}
+
+.centered-container {
+    text-align: center;
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
